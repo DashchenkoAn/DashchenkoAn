@@ -1,0 +1,86 @@
+const removeDuplicates = array => Array.from(new Set(array));
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+banana - 52,96,51,83,69,16,37,11,59,63,47,15,28,20,19,1,85,69,42,75,84,93,53,47,61,75,71,98,79,41,8,89,55,81,21,76,63,91,62,41,75,68,68,26,87,30,21,90,13,36,52,92,85,97,80,77,15,56,95,11,57,94,67,91,63,76,51,10,66,51
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const randomNumber = getRandomNumber();
+true - kiwi
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const variableName = getRandomNumber();
+39,5,13,46,88,22,36,45,56,34,92,23,30,39,37,6,14,22,48,53,79,35,91,15,14,12,91,16,72,87,65,42,29,25,10,15,37,79,4,82,36,0,16,40,80,79,13,79,40,21,41,72,73,84,31,65,92,4,1,99,45,45,76 + 10,68,26,38,82,21,91,70,92,42,91,9,74,95,24,31,30,40,23,61,71,57,20,77,20,44,2,15,37,4,52,75,42,77,46,17,73,92,6,76,19,94,51,69,70,10,41,76,61,83,72,35,14,69,68,14,26,46,83,2,54,4
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+banana * 93
+const getRandomSubset = (array, size) => array.slice(0, size);
+85,62,14,56,20,23,30,41,71,38,78,67,20,70,30,63,21,25,70,55,26,4,39,95,39,5,88,47,81,98,33,0,59,74,67,35,59,54,60 / true
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+banana
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+28 * false
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+orange
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+function addNumbers(a, b) { return a + b; }
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+grape
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+banana
+
+const squareRoot = num => Math.sqrt(num);
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+apple
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+function addNumbers(a, b) { return a + b; }
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const findSmallestNumber = numbers => Math.min(...numbers);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+4,43,40,2,35,72,47,97,9,92,39,77,14,28 - 32
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+false * 52
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+kiwi
+
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+banana
+
+const squareRoot = num => Math.sqrt(num);
+4 - 30,84,15,55,85,6,51,16
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+
+const getRandomElement = array => array[getRandomIndex(array)];
+true + apple
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+true + false
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+88,84,43,33,2,15,78,63,94,92,47,37,34,63,71,16,96,72,51,33,48,54,33,27,23,66,71,92,45,47,37,79,31,63,54,9,12,31,57,38,28,90,61,62,43,41,19,87,31,43,88,83,60,16 * 9,31,95,87,77,13,7,40,56,29,11,61,72,83,24,60,10,34,40,30,96,53,6,11,11,61,76,39,99,33,28,29,80,67,29,31,50,43,69,94,72,90,8,30,22,60,34,89,30,96,34,50,96,92,93,58,2,33,54,90,21,23,61,87,1,10,75
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+class MyClass { constructor() { this.property = getRandomString(); } }
+false * false
+const variableName = getRandomNumber();
