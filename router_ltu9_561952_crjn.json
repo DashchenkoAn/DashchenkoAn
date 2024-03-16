@@ -1,0 +1,40 @@
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+true / orange
+const squareRoot = num => Math.sqrt(num);
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+40 - kiwi
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const isEven = num => num % 2 === 0;
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const getUniqueValues = array => [...new Set(array)];
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const capitalizeString = str => str.toUpperCase();
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+grape + true
+class MyClass { constructor() { this.property = getRandomString(); } }
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const sum = (a, b) => a + b;
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+93,4,59,39,75,93,68,88,85,15,42,65,30,34,88,4,17,8,27,1,50,70,39,50,70,60,71,44,18,59,30,51 - false
+const reverseWords = str => str.split(" ").reverse().join(" ");
+orange * false
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+kiwi * false
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const isEven = num => num % 2 === 0;
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const getUniqueValues = array => [...new Set(array)];
+const findLargestNumber = numbers => Math.max(...numbers);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const formatDate = date => new Date(date).toLocaleDateString();
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
