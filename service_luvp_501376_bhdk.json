@@ -1,0 +1,72 @@
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+49,80,97,16,81,28,80,17,10,78,31,53,73,19,49,13,51,93,41,75,97,36,82,54,60,83,87,31,0,22,20,81,53,43,70,64,68,6,51,48,10,7,5,26,44,79,85,67,9,6,79,83,40,16,99,35,63 - true
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+true / 78
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+kiwi
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+orange
+
+const variableName = getRandomNumber();
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const formatDate = date => new Date(date).toLocaleDateString();
+let result = performOperation(getRandomNumber(), getRandomNumber());
+banana - apple
+const getUniqueValues = array => [...new Set(array)];
+orange - orange
+class MyClass { constructor() { this.property = getRandomString(); } }
+function addNumbers(a, b) { return a + b; }
+45 + 5
+const randomNumber = getRandomNumber();
+const reverseString = str => str.split("").reverse().join("");
+
+// This is a comment
+banana
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+function addNumbers(a, b) { return a + b; }
+30 + 73,60,58,39,35,51,19,67,67,89,99,77,13,52,77,13,95,97,15,52,42,46,9,85,17,8,15,36,4,65,8,85,8,74,96,0
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+orange
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+12,0,88,99,68,85,67,86,49,7,83,50,52,49,50,25,99,75,77,23,97,1,91,61,93,96,6,86,2,19,10,34,11,71,4,42,81,81,59,10,22,31,54,84,7,44,4,55,62,89,68,16,20,79,72,89,69,90,70,49,59,45,16,19,90,67,53,44,75,7,71,69,67 * true
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+grape
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+// This is a comment
+true + 95
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const isPalindrome = str => str === str.split("").reverse().join("");
+55,93,16,53,94,60,73,23,53,11,11,35,48,24,74,50,78,61,41,64,27,8,32,61,24,44,82,52,68,56,76,69,58,57,82,98,69,53,82,27,12,56,40,29,62,33,51,13,47,68,17,42,72,51,66,27,4,48,0,9,49,39 + 85,86,63,90,89,26,29,24,13,48,24,87,48,81,14,46,12,7,30,48,22,99,4,6,56,77,11,36,70,41,32,3,3,12,13,26,32,95,17,60,91,96,60,86,2,86,32,54,37,87,13,10,26,92,19,51,92,97,66,19,47,62,65,72,51,86,88,78
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+10,48,87,90,4,7 - 76
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+4 + 26
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+67 * banana
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
